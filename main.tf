@@ -1,13 +1,5 @@
-resource "kubernetes_namespace" "example" {
+resource "kubernetes_namespace" "this" {
   metadata {
     name = var.name
   }
 }
-
-
-variable name {
-  type = string
-  default = "test"
-  description = "The name of the namespace"
-}
-
